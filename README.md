@@ -10,7 +10,7 @@ gulp
 
 
 ```
-gulp clear
+gulp clean
 gulp htmlmin
 gulp css
 gulp js
