@@ -1,0 +1,86 @@
+#header{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.test1{
+  width: 100%;
+  height: 100vh;
+  /*background: rgba(0,0,0,.7);*/
+  font-size: 20px;
+  text-align: center;
+  line-height: 100vh;
+  z-index: 100;
+  color: #fff;
+}
+.test2{
+  width: 100%;
+  height: 100vh;
+  /*background: rgba(0,0,0,.7);*/
+  font-size: 20px;
+  text-align: center;
+  line-height: 100vh;
+  color: #fff;
+}
+.test3{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,1);
+  font-size: 20px;
+  text-align: center;
+  line-height: 100vh;
+  color: #fff;
+}
+
+.swiper-container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+.swiper-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+.swiper-slide > div {
+    width: 100%;
+    height: 100%;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover*/
+}
+.swiper-slide-1{ background-color: green; }
+.swiper-slide-2{ background-color: blue; }
+.swiper-slide-3{ background-color: purple; }
+.swiper-slide-4{ background-color: yellow; }
+.swiper-slide-5{ background-color: pink; }
+.swiper-slide-6{ background-color: red; }
+.swiper-slide-7{ background-color: maroon; }
+.swiper-slide-8{ background-color: silver; }
+
+
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  /*background: rgba(0,0,0,.3);*/
+}
+
+
+
+
+
+
+

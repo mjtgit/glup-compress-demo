@@ -1,0 +1,69 @@
+@charset "utf-8";
+a, body {color: #333 }
+button, fieldset, img {border: 0 }
+* {margin: 0; padding: 0 }
+body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font: 400 26px/1.5 HelveticaNeue-Thin, "Helvetica Neue", Helvetica, Arial, PingFangSC-Light, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-style: normal
+}
+footer, header, nav, address, article, aside, details, figcaption, figure, footer, header, hgroup, iframe, menu, nav, section {
+    display: block
+}
+body {
+    -ms-touch-action: none;
+    touch-action: none;
+    position: relative;
+    -moz-user-select: none;
+    background: #f3f3f3;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none
+}
+address, cite, dfn, em, i, var {
+    font-weight: 400;
+    font-style: normal
+}
+dfn {
+    font-family: Arial
+}
+ol, ul {
+    list-style: none
+}
+address, em {
+    font-style: normal
+}
+a {
+    text-decoration: none
+}
+a:hover {
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear
+}
+button, input, select, textarea {
+    font-size: 100%;
+    outline: 0
+}
+button {
+    outline: 0
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+input {
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cdcdcd
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #cdcdcd
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #cdcdcd
+}

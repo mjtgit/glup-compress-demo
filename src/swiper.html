@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiperTstt.css">
+  <style type="text/css">
+    .swiper-container{height: 300px; width: 500px; }
+    .swiper-slide{height: 300px; width: 250px; border:1px solid #ccc; }
+    .red{background: red; }
+    .green{background: green; }
+    .blue{background: blue; }
+    .orange{background: orange; }
+    .pink{background: pink; }
+  </style>
+</head>
+<body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide red"></div>
+          <div class="swiper-slide green"></div>
+          <div class="swiper-slide blue"></div>
+          <div class="swiper-slide orange"></div>
+          <div class="swiper-slide pink"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiperTest.js"></script>
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container',{
+          pagination:'.swiper-pagination',
+          loop:true,
+          //autoplay:1000,
+          //grabCursor:true,
+          centeredSlides:true,
+          slidesPerView:'auto',
+          effect:'coverflow',
+          coverflow:{
+              rotate:0,//滑动时旋转角度
+              stretch:150,//聚合宽度
+              depth:100,//景深
+              modifier:1,//覆盖叠加层数
+              slideShadows:true//是否阴影
+          }
+      });
+    </script>
+</body>
+</html>
