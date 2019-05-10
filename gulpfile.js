@@ -52,11 +52,23 @@ gulp.task('htmlmin',function(){
 });
 
 
-//image 增加版本号(目前会导致出问题，暂时放着)
+//image 把图片导入打包文件夹(这种可以不压缩，直接导入文件)
 gulp.task('imgmove', function () {
     gulp.src(srcRoute + '/img/**/*.{png,jpg,gif,ico}')
         .pipe(gulp.dest(outRoute+'/img'));
 });
+
+
+// 压缩图片，需要单独输入命令
+gulp.task('imagemin',function(){
+    // 1. 找到图片
+    gulp.src(srcRoute + '/img/*.*')
+        // 2. 压缩图片
+        .pipe(imageMin({progressive: true}))
+        // 3. 另存图片
+        .pipe(gulp.dest(outRoute+'/img'))
+})
+
 
 
 //改变html、js、css的资源引用的链接
@@ -87,4 +99,4 @@ gulp.task('revHtmlJs', function () {
 
 
 //按顺序执行任务
-gulp.task('default', ['clean'], gulpSequence('imgmove', 'css', 'js','htmlmin', 'rev', 'revHtmlCss', 'revHtmlJs'));
+gulp.task('default', ['clean'], gulpSequence('imagemin', 'css', 'js','htmlmin', 'rev', 'revHtmlCss', 'revHtmlJs'));
